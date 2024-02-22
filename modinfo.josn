@@ -1,0 +1,10 @@
+{
+    "id": "testmod",
+    "name": "Test Mod",
+    "version": "1.0",
+    "authors": "AndrewFM",
+    "description": "This mod does something interesting, probably!",
+    "requirements": ["bestmod", "vrmod"],
+    "requirements_names": ["That Other Mod", "Virtual Reality Support"],
+    "checksum_override_version": false
+}
