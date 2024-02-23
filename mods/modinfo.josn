@@ -1,10 +1,10 @@
 {
-    "id": "testmod",
-    "name": "Test Mod",
-    "version": "1.0",
-    "authors": "AndrewFM",
-    "description": "This mod does something interesting, probably!",
-    "requirements": ["bestmod", "vrmod"],
-    "requirements_names": ["That Other Mod", "Virtual Reality Support"],
+    "id": "steelcat",
+    "name": "The Stellcat",
+    "version": "0.0.1",
+    "authors": "CITRIC","PIAO_cjzse"
+    "description": "This mod is about the steelcat journey",
+    "requirements": ["slime-cubed.slugbase", "moreslugcats"],
+    "requirements_names": ["SlugBase", "More Slugcats Expansion"],
     "checksum_override_version": false
 }
