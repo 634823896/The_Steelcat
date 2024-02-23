@@ -3,7 +3,7 @@
 	"name": "The Stellcat",
 	"description": "This mod is about the steelcat journey",
 	"features": {
-		"color": "9cf0a4",
+		"color": "d5e3f0",
 		"steelcat/super_jump": 0.5,
 		"steelcat/explode_on_death": true,
 
