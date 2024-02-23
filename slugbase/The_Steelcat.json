@@ -1,0 +1,14 @@
+{
+	"id": "steelcat",
+	"name": "The Stellcat",
+	"description": "This mod is about the steelcat journey",
+	"features": {
+		"color": "9cf0a4",
+		"steelcat/super_jump": 0.5,
+		"steelcat/explode_on_death": true,
+
+		"select_menu_scene": "Slugcat_steelcat",
+		"select_menu_scene_ascended": "Ghost_steelcat",
+		"steelcat/mean_lizards": 0.8
+	}
+}
