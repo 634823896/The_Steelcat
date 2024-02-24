@@ -6,6 +6,15 @@
 		"color": "d5e3f0",
 		"steelcat/super_jump": 0.5,
 		"steelcat/explode_on_death": true,
+		"auto_grab_batflies": false,
+		"food_min": 3,
+		"food_max": 7,
+
+		"diet": {
+			"plants": 1,
+			"meat": 1,
+			"corpses": 1
+		},
 
 		"select_menu_scene": "Slugcat_steelcat",
 		"select_menu_scene_ascended": "Ghost_steelcat",
