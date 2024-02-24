@@ -1,0 +1,10 @@
+﻿{
+	"id": "steelcat",
+	"name": "钢猫（The Steelcat）",
+	"version": "0.0.1",
+	"authors": "CITRIC,PIAO_cjzse",
+	"description": "This mod is about the steelcat journey",
+	"requirements": [ "slime-cubed.slugbase" ],
+	"requirements_names": [ "SlugBase" ],
+	"tags": [ "Custom Slugcat" ]
+}
