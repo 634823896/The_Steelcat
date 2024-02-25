@@ -3,6 +3,7 @@ using BepInEx;
 using UnityEngine;
 using SlugBase.Features;
 using static SlugBase.Features.FeatureTypes;
+using MonoMod;
 
 namespace steelcat
 {
@@ -14,7 +15,7 @@ namespace steelcat
         public static readonly PlayerFeature<float> SuperJump = PlayerFloat("steelcat/super_jump");
         public static readonly PlayerFeature<bool> ExplodeOnDeath = PlayerBool("steelcat/explode_on_death");
         public static readonly GameFeature<float> MeanLizards = GameFloat("steelcat/mean_lizards");
-
+        public static readonly PlayerFeature<int> SteelArmour = PlayerInt("steelcat/steel_armour");
 
         // Add hooks
         public void OnEnable()
@@ -25,11 +26,18 @@ namespace steelcat
             On.Player.Jump += Player_Jump;
             On.Player.Die += Player_Die;
             On.Lizard.ctor += Lizard_ctor;
+            On.Centipede.+= Steel_armour;
         }
         
         // Load any resources, such as sprites or sounds
         private void LoadResources(RainWorld rainWorld)
         {
+        }
+        
+        //实现钢盔
+        private void Steel_armour(on)
+        {
+            MonoModOriginal(self)
         }
 
         // Implement MeanLizards
@@ -42,7 +50,6 @@ namespace steelcat
                 self.spawnDataEvil = Mathf.Min(self.spawnDataEvil, meanness);
             }
         }
-
 
         // Implement SuperJump
         private void Player_Jump(On.Player.orig_Jump orig, Player self)
