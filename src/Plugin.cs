@@ -43,7 +43,6 @@ namespace steelcat
             }
         }
 
-
         // Implement SuperJump
         private void Player_Jump(On.Player.orig_Jump orig, Player self)
         {
