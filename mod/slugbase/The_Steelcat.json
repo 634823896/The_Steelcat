@@ -1,23 +1,34 @@
 {
 	"id": "steelcat",
-	"name": "The Steelcat",
+	"name": "The Blacksmith",
 	"description": "This mod is about the steelcat journey",
 	"features": {
 		"color": "d5e3f0",
+
 		"steelcat/super_jump": 0.5,
 		"steelcat/explode_on_death": true,
+		"steelcat/mean_lizards": 0.8,
+		"steelcat/steel_armour": 5,
+
 		"auto_grab_batflies": false,
 		"food_min": 3,
 		"food_max": 7,
-
 		"diet": {
 			"plants": 1,
 			"meat": 1,
 			"corpses": 1
 		},
 
+		"alignments": {
+			"Scavengers": { "like": 0.25 },
+			"lizards": { "like": 0.25 },
+			"Cicadas": { "like": 0.25 },
+			"GarbageWorms": { "like": 0.25 },
+			"Deer": { "like": 0.25 },
+			"JetFish": {"like": 0.25}
+		},
+
 		"select_menu_scene": "Slugcat_steelcat",
-		"select_menu_scene_ascended": "Ghost_steelcat",
-		"steelcat/mean_lizards": 0.8
+		"select_menu_scene_ascended": "Ghost_steelcat"
 	}
 }
