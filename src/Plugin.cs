@@ -15,7 +15,7 @@ namespace steelcat
         public static readonly PlayerFeature<float> SuperJump = PlayerFloat("steelcat/super_jump");
         public static readonly PlayerFeature<bool> ExplodeOnDeath = PlayerBool("steelcat/explode_on_death");
         public static readonly GameFeature<float> MeanLizards = GameFloat("steelcat/mean_lizards");
-        public static readonly PlayerFeature<int> SteelArmour = PlayerInt("steelcat/steel_armour");
+        public static readonly PlayerFeature<int> SteelArmor = PlayerInt("steelcat/steel_armor");
 
         // Add hooks
         public void OnEnable()
@@ -26,7 +26,7 @@ namespace steelcat
             On.Player.Jump += Player_Jump;
             On.Player.Die += Player_Die;
             On.Lizard.ctor += Lizard_ctor;
-            On.Centipede.+= Steel_armour;
+            On.Centipede.+= Steel_armor;
         }
         
         // Load any resources, such as sprites or sounds
@@ -35,7 +35,7 @@ namespace steelcat
         }
         
         //实现钢盔
-        private void Steel_armour(on)
+        private void Steel_armor(on)
         {
             MonoModOriginal(self)
         }

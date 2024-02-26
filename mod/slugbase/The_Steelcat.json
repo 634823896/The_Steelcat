@@ -8,7 +8,7 @@
 		"steelcat/super_jump": 0.5,
 		"steelcat/explode_on_death": true,
 		"steelcat/mean_lizards": 0.8,
-		"steelcat/steel_armour": 5,
+		"steelcat/steel_armor": 5,
 
 		"auto_grab_batflies": false,
 		"food_min": 3,
