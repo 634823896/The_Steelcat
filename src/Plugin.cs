@@ -26,7 +26,7 @@ namespace steelcat
             On.Player.Jump += Player_Jump;
             On.Player.Die += Player_Die;
             On.Lizard.ctor += Lizard_ctor;
-            On.Centipede.+= Steel_armor;
+            On.Player.DeathByBiteMultiplier += Steel_armor;
         }
         
         // Load any resources, such as sprites or sounds
@@ -35,9 +35,9 @@ namespace steelcat
         }
         
         //实现钢盔
-        private void Steel_armor(on)
+        private float Steel_armor(On.Player.orig_DeathByBiteMultiplier orig, Player self)
         {
-            MonoModOriginal(self)
+            return 0f;
         }
 
         // Implement MeanLizards
