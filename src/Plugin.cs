@@ -33,11 +33,17 @@ namespace steelcat
         private void LoadResources(RainWorld rainWorld)
         {
         }
-        
+
         //实现钢盔
         private float Steel_armor(On.Player.orig_DeathByBiteMultiplier orig, Player self)
         {
-            return 0f;
+            float num = orig(self);
+            if (SteelArmor.TryGet(self, out int steelarmor) && steelarmor > 0)
+            {
+                num = 0f;
+                steelarmor = steelarmor - 1;
+            }
+            return num;
         }
 
         // Implement MeanLizards
