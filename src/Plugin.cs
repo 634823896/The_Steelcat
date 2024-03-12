@@ -28,7 +28,9 @@ namespace steelcat
             On.Lizard.ctor += Lizard_ctor;
             On.Player.DeathByBiteMultiplier += Steel_armor;
         }
+
         
+
         // Load any resources, such as sprites or sounds
         private void LoadResources(RainWorld rainWorld)
         {
@@ -37,11 +39,18 @@ namespace steelcat
         //实现钢盔
         private float Steel_armor(On.Player.orig_DeathByBiteMultiplier orig, Player self)
         {
+            //输出时间和“Steel_armor被调用”到C:\Users\63482\Desktop\steelcat.txt
+            System.IO.File.AppendAllText(@"C:\Users\63482\Desktop\steelcat.txt", DateTime.Now.ToString() + "Steel_armor被调用\n");
             float num = orig(self);
-            if (SteelArmor.TryGet(self, out int steelarmor) && steelarmor > 0)
+            int runtimesteelarmor;
+            SteelArmor.TryGet(self, out int steelarmor);
+            runtimesteelarmor = steelarmor;
+            if (runtimesteelarmor > 0)
             {
                 num = 0f;
-                steelarmor = steelarmor - 1;
+                runtimesteelarmor--;
+                //输出runtimesteelarmor的值到C:\Users\63482\Desktop\steelcat.txt
+                System.IO.File.AppendAllText(@"C:\Users\63482\Desktop\steelcat.txt", runtimesteelarmor.ToString()+"\n");
             }
             return num;
         }
