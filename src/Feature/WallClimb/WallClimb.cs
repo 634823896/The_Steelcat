@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace The_Steelcat
+namespace TheSteelcat.Feature.WallClimb
 {
-    enum Enums
+    internal class WallClimb
     {
-        runtimesteelarmor,
     }
 }
